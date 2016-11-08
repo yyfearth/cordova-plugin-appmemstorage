@@ -1,0 +1,12 @@
+{
+  "name": "cordova-plugin-app-mem-storage",
+  "version": "1.0.0",
+  "description": "Cordova App Memory Storage Plugin",
+  "cordova": {
+    "id": "cordova-plugin-app-mem-storage",
+    "platforms": [
+      "ios", "android"
+    ]
+  },
+  "private": true
+}
