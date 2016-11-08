@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-app-mem-storage"
+        version="1.0.0">
+    <name>Cordova Memory Storage Plugin</name>
+    <description>This plugin provides ability to store and retrieve arbitrary string in app memory.</description>
+    <keywords>memory, storage, store</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=4.0.0"/>
+    </engines>
+
+    <js-module src="www/app-mem-storage.js" name="AppMemStorage">
+        <clobbers target="window.appMemStorage"/>
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AppMemStorage">
+                <param name="android-package" value="org.apache.cordova.appmemstorage.AppMemStorage"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/AppMemStorage.java" target-dir="src/org/apache/cordova/appmemstorage"/>
+    </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AppMemStorage">
+                <param name="ios-package" value="AppMemStorage"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/AppMemStorage.h"/>
+        <source-file src="src/ios/AppMemStorage.m"/>
+    </platform>
+</plugin>
