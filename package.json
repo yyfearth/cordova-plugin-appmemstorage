@@ -1,12 +1,27 @@
 {
-  "name": "cordova-plugin-app-mem-storage",
-  "version": "1.0.0",
+  "name": "cordova-plugin-appmemstorage",
+  "version": "0.1.0",
   "description": "Cordova App Memory Storage Plugin",
+  "author": "Wilson Young <yyfearth@gmail.com>",
+  "keywords": [
+    "cordova",
+    "app",
+    "memory",
+    "storage",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
   "cordova": {
-    "id": "cordova-plugin-app-mem-storage",
+    "id": "cordova-plugin-appmemstorage",
     "platforms": [
-      "ios", "android"
+      "ios",
+      "android"
     ]
   },
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyfearth/cordova-plugin-appmemstorage"
+  },
+  "license": "MIT"
 }
